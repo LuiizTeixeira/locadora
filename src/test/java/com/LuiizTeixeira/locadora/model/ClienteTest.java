@@ -3,7 +3,7 @@ package com.LuiizTeixeira.locadora.model;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.AssertionsKt.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 
 public class ClienteTest {
