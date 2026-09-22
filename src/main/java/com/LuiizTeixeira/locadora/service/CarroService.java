@@ -3,9 +3,11 @@ package com.LuiizTeixeira.locadora.service;
 import com.LuiizTeixeira.locadora.entity.CarroEntity;
 import com.LuiizTeixeira.locadora.model.exception.EntityNotFoundException;
 import com.LuiizTeixeira.locadora.repository.CarroRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class CarroService {
 
     private final CarroRepository Repository;
