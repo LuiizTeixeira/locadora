@@ -115,7 +115,7 @@ class CarroServiceTest {
 
     @Test
     void deveBuscarCarroPorId() {
-        Long id = 1l;
+        Long id = 1L;
         var carro = new CarroEntity("Gol", 200.0, 2021);
         when(repository.findById(any())).thenReturn(Optional.of(carro));
 

@@ -23,7 +23,7 @@ public class CarroService {
         return Repository.save(carro);
     }
 
-    public CarroEntity atualizar(long id, CarroEntity carroAtualizado) {
+    public CarroEntity atualizar(Long id, CarroEntity carroAtualizado) {
         var carroExistente = Repository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException(" Carro não encontratdo."));
 
@@ -33,23 +33,19 @@ public class CarroService {
         return Repository.save(carroExistente);
     }
 
-    public void deletar(long id) {
+    public void deletar(Long id) {
         var carroExistente = Repository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Carro não encontrado."));
 
         Repository.delete(carroExistente);
     }
 
-    public CarroEntity buscarPorId(long id) {
+    public CarroEntity buscarPorId(Long id) {
         return Repository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Carro não encontrado."));
     }
 
-    public List<CarroEntity> buscarTodos() {
-        return Repository.findAll();
-    }
-
     public List<CarroEntity> listarTodos() {
-        return null;
+        return Repository.findAll();
     }
 }
